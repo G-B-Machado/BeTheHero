@@ -1,0 +1,29 @@
+// precisa vir antes das rotas
+app.use(express.json());
+
+/**
+ * Métodos HTTP
+ * GET: Buscar informação no back-end
+ * POST: criar informação no back-end
+ * PUT: alterar informação no back-end
+ * DELETE: deletar uma informação no back-end
+ */
+
+/**
+  * Tipos de parâmetros:
+  *Estes parametros são acessados atráves do (request.)
+  * Query Params: parametros nomeados enviados na rota após ? > (filtros, paginação)
+  * Route Params: parametros utilizados para identificar recursos
+  * Request Body: Corpo da requisição utilizado para criar ou alterar recursos
+  */
+
+/**
+   * SQL (formato utilizado para comunicação): mysql, sqllite, postgreSQL, Oracle
+   * NoSql: MongoDB, CouchDB
+   */
+
+/**
+	* Driver: SELECT * from users
+	Query Builder: table('users').select('*').where();
+    */
+
