@@ -22,8 +22,26 @@ app.use(express.json());
    * NoSql: MongoDB, CouchDB
    */
 
+
+
 /**
 	* Driver: SELECT * from users
 	Query Builder: table('users').select('*').where();
     */
 
+/*
+Test Integration - testa por completo uma funcionalidade/rota
+test unit - testa de forma isolada
+*/
+
+/*
+HEROKU - plano gratuito (bom para testar aplicações simples (NODE))
+digitalOcean - quando aplicação for comercial
+
+netlify - frontend
+*/
+
+Estudar
+padrões do código: ESling, prettier
+autenticação JWT
+styled Components
