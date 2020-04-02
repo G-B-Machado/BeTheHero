@@ -1,6 +1,6 @@
 const request = require('supertest');
 const app = require('../../src/app');
-const connection = require('../../src/database/conenection');
+const connection = require('../../src/database/connection');
 describe('ONG', ()=> {
     beforeEach(async () => {
         await connection.migrate.rollback();
@@ -19,8 +19,8 @@ describe('ONG', ()=> {
             city: "São José",
             uf: "SC" 
         });
-        console.log(response.body);
+        
         expect(response.body).toHaveProperty('id');
-        expect(response.body).toHaveLength(8);
+        expect(response.body.id).toHaveLength(8);
     });
 })

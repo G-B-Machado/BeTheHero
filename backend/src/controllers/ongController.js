@@ -1,6 +1,5 @@
-const crypto = require('crypto');
-const generateUniqueId = ('../database/connection')
-const connection = require('../database/conenection');
+const generateUniqueId = require('../utils/generateUniqueId');
+const connection = require('../database/connection');
 module.exports = {
 	async index (request, response) {
 		const ongs = await connection('ongs').select('*');
